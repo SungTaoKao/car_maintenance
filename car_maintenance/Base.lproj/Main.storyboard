@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jdq-GQ-nlY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,16 +30,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GO"/>
                                 <connections>
-                                    <segue destination="CtF-bV-FOf" kind="presentation" id="Gvk-Xo-C6o"/>
+                                    <segue destination="CtF-bV-FOf" kind="show" id="UcP-7g-2xt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QxM-zw-r96"/>
+                    <connections>
+                        <segue destination="CtF-bV-FOf" kind="show" id="dAy-Qo-6qT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="134"/>
+            <point key="canvasLocation" x="716" y="133.5832083958021"/>
         </scene>
         <!--Info-->
         <scene sceneID="27c-wI-bW3">
@@ -54,13 +58,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" id="mde-bz-ZSw" userLabel="Information"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info.png" selectedImage="info.png" id="mde-bz-ZSw" userLabel="Information"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSl-El-acc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2258" y="466"/>
+            <point key="canvasLocation" x="3376.8000000000002" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="gZO-UZ-Y4B">
             <objects>
                 <viewController id="QQW-Vn-u7C" sceneMemberID="viewController">
@@ -73,13 +77,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="settings.png" selectedImage="settings.png" id="wA4-bW-ht8" userLabel="Settings">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" selectedImage="settings.png" id="wA4-bW-ht8" userLabel="Settings">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAh-i6-NxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2258" y="-200"/>
+            <point key="canvasLocation" x="2596" y="-254.12293853073464"/>
+        </scene>
+        <!--Car-->
+        <scene sceneID="Qep-Mw-INC">
+            <objects>
+                <viewController id="Hlm-BO-YoF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sES-go-hAv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ioQ-JZ-Phf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="91W-kQ-Py0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Car" image="car.gif" landscapeImage="car.gif" selectedImage="car.gif" id="opB-z1-kHk" userLabel="Car"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MfE-Z5-e6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="529.38530734632684"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tyg-fR-Zwg">
@@ -98,31 +121,34 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXG-cQ-DEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1303" y="133"/>
+            <point key="canvasLocation" x="1640.8" y="132.68365817091455"/>
         </scene>
-        <!--Car-->
-        <scene sceneID="Qep-Mw-INC">
+        <!--Navigation Controller-->
+        <scene sceneID="bIH-ic-nrh">
             <objects>
-                <viewController id="Hlm-BO-YoF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sES-go-hAv"/>
-                        <viewControllerLayoutGuide type="bottom" id="ioQ-JZ-Phf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="91W-kQ-Py0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Car" image="automobiles_icon.png" selectedImage="automobiles_icon.png" id="opB-z1-kHk" userLabel="Car"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MfE-Z5-e6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jdq-GQ-nlY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EdQ-2x-vup">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cmf-Gt-PHr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="clh-u6-q4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="875"/>
+            <point key="canvasLocation" x="-412" y="133"/>
         </scene>
     </scenes>
     <resources>
-        <image name="automobiles_icon.png" width="20" height="20"/>
+        <image name="car.gif" width="20" height="20"/>
+        <image name="info.png" width="20" height="20"/>
         <image name="settings.png" width="20" height="20"/>
         <image name="yellow-toy-car.jpg" width="600" height="450"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dAy-Qo-6qT"/>
+    </inferredMetricsTieBreakers>
 </document>

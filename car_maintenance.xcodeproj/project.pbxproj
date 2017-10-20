@@ -14,7 +14,8 @@
 		C93FC39D1F88095100E19D10 /* car_maintenanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC39C1F88095100E19D10 /* car_maintenanceTests.swift */; };
 		C93FC3A81F88095100E19D10 /* car_maintenanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3A71F88095100E19D10 /* car_maintenanceUITests.swift */; };
 		C9E5EF1B1F9A7B540032A32C /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF1A1F9A7B540032A32C /* settings.png */; };
-		C9E5EF1D1F9A7D1F0032A32C /* automobiles_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF1C1F9A7D1F0032A32C /* automobiles_icon.png */; };
+		C9E5EF231F9A812D0032A32C /* car.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF221F9A812D0032A32C /* car.gif */; };
+		C9E5EF271F9A823B0032A32C /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF261F9A823B0032A32C /* info.png */; };
 		F9AC2B0B1F9A4A3C00F4AE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */; };
 		F9AC2B111F9A52CD00F4AE46 /* yellow-toy-car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */; };
 /* End PBXBuildFile section */
@@ -50,7 +51,8 @@
 		C93FC3A71F88095100E19D10 /* car_maintenanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_maintenanceUITests.swift; sourceTree = "<group>"; };
 		C93FC3A91F88095100E19D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9E5EF1A1F9A7B540032A32C /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Assets.xcassets/AppIcon.appiconset/settings.png; sourceTree = "<group>"; };
-		C9E5EF1C1F9A7D1F0032A32C /* automobiles_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = automobiles_icon.png; path = Assets.xcassets/AppIcon.appiconset/automobiles_icon.png; sourceTree = "<group>"; };
+		C9E5EF221F9A812D0032A32C /* car.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = car.gif; path = Assets.xcassets/AppIcon.appiconset/car.gif; sourceTree = "<group>"; };
+		C9E5EF261F9A823B0032A32C /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = Assets.xcassets/AppIcon.appiconset/info.png; sourceTree = "<group>"; };
 		F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "yellow-toy-car.jpg"; path = "Assets.xcassets/images/yellow-toy-car.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +111,8 @@
 				C93FC38B1F88095100E19D10 /* Main.storyboard */,
 				C9E5EF1A1F9A7B540032A32C /* settings.png */,
 				F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */,
-				C9E5EF1C1F9A7D1F0032A32C /* automobiles_icon.png */,
+				C9E5EF261F9A823B0032A32C /* info.png */,
+				C9E5EF221F9A812D0032A32C /* car.gif */,
 				C93FC3901F88095100E19D10 /* LaunchScreen.storyboard */,
 				C93FC3931F88095100E19D10 /* Info.plist */,
 			);
@@ -197,7 +200,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Paul Kao";
 				TargetAttributes = {
 					C93FC3831F88095100E19D10 = {
@@ -242,11 +245,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93FC3921F88095100E19D10 /* LaunchScreen.storyboard in Resources */,
+				C9E5EF271F9A823B0032A32C /* info.png in Resources */,
 				C9E5EF1B1F9A7B540032A32C /* settings.png in Resources */,
 				F9AC2B0B1F9A4A3C00F4AE46 /* Assets.xcassets in Resources */,
+				C9E5EF231F9A812D0032A32C /* car.gif in Resources */,
 				C93FC38D1F88095100E19D10 /* Main.storyboard in Resources */,
 				F9AC2B111F9A52CD00F4AE46 /* yellow-toy-car.jpg in Resources */,
-				C9E5EF1D1F9A7D1F0032A32C /* automobiles_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +341,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -345,7 +351,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -388,7 +398,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -396,7 +408,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
