@@ -10,10 +10,14 @@
 		C93FC3881F88095100E19D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3871F88095100E19D10 /* AppDelegate.swift */; };
 		C93FC38A1F88095100E19D10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3891F88095100E19D10 /* ViewController.swift */; };
 		C93FC38D1F88095100E19D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93FC38B1F88095100E19D10 /* Main.storyboard */; };
-		C93FC38F1F88095100E19D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93FC38E1F88095100E19D10 /* Assets.xcassets */; };
 		C93FC3921F88095100E19D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93FC3901F88095100E19D10 /* LaunchScreen.storyboard */; };
 		C93FC39D1F88095100E19D10 /* car_maintenanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC39C1F88095100E19D10 /* car_maintenanceTests.swift */; };
 		C93FC3A81F88095100E19D10 /* car_maintenanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3A71F88095100E19D10 /* car_maintenanceUITests.swift */; };
+		F9AC2B0B1F9A4A3C00F4AE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */; };
+		F9AC2B0D1F9A4A5F00F4AE46 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B0C1F9A4A5F00F4AE46 /* settings.png */; };
+		F9AC2B0F1F9A4D2000F4AE46 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B0E1F9A4D1F00F4AE46 /* Info.png */; };
+		F9AC2B111F9A52CD00F4AE46 /* yellow-toy-car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */; };
+		F9AC2B131F9A542C00F4AE46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B121F9A542B00F4AE46 /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		C93FC3871F88095100E19D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C93FC3891F88095100E19D10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C93FC38C1F88095100E19D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C93FC38E1F88095100E19D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C93FC3911F88095100E19D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93FC3931F88095100E19D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93FC3981F88095100E19D10 /* car_maintenanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = car_maintenanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +50,11 @@
 		C93FC3A31F88095100E19D10 /* car_maintenanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = car_maintenanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FC3A71F88095100E19D10 /* car_maintenanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_maintenanceUITests.swift; sourceTree = "<group>"; };
 		C93FC3A91F88095100E19D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9AC2B0C1F9A4A5F00F4AE46 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Assets.xcassets/AppIcon.appiconset/settings.png; sourceTree = "<group>"; };
+		F9AC2B0E1F9A4D1F00F4AE46 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = Assets.xcassets/AppIcon.appiconset/Info.png; sourceTree = "<group>"; };
+		F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "yellow-toy-car.jpg"; path = "Assets.xcassets/images/yellow-toy-car.jpg"; sourceTree = "<group>"; };
+		F9AC2B121F9A542B00F4AE46 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Assets.xcassets/AppIcon.appiconset/back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +105,14 @@
 		C93FC3861F88095100E19D10 /* car_maintenance */ = {
 			isa = PBXGroup;
 			children = (
+				F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */,
 				C93FC3871F88095100E19D10 /* AppDelegate.swift */,
 				C93FC3891F88095100E19D10 /* ViewController.swift */,
 				C93FC38B1F88095100E19D10 /* Main.storyboard */,
-				C93FC38E1F88095100E19D10 /* Assets.xcassets */,
+				F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */,
+				F9AC2B121F9A542B00F4AE46 /* back.png */,
+				F9AC2B0E1F9A4D1F00F4AE46 /* Info.png */,
+				F9AC2B0C1F9A4A5F00F4AE46 /* settings.png */,
 				C93FC3901F88095100E19D10 /* LaunchScreen.storyboard */,
 				C93FC3931F88095100E19D10 /* Info.plist */,
 			);
@@ -232,9 +244,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AC2B0D1F9A4A5F00F4AE46 /* settings.png in Resources */,
 				C93FC3921F88095100E19D10 /* LaunchScreen.storyboard in Resources */,
-				C93FC38F1F88095100E19D10 /* Assets.xcassets in Resources */,
+				F9AC2B0F1F9A4D2000F4AE46 /* Info.png in Resources */,
+				F9AC2B0B1F9A4A3C00F4AE46 /* Assets.xcassets in Resources */,
+				F9AC2B131F9A542C00F4AE46 /* back.png in Resources */,
 				C93FC38D1F88095100E19D10 /* Main.storyboard in Resources */,
+				F9AC2B111F9A52CD00F4AE46 /* yellow-toy-car.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +523,7 @@
 				C93FC3AE1F88095100E19D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C93FC3AF1F88095100E19D10 /* Build configuration list for PBXNativeTarget "car_maintenanceTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +532,7 @@
 				C93FC3B11F88095100E19D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C93FC3B21F88095100E19D10 /* Build configuration list for PBXNativeTarget "car_maintenanceUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +541,7 @@
 				C93FC3B41F88095100E19D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
