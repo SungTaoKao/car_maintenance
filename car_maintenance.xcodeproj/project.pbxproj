@@ -13,11 +13,10 @@
 		C93FC3921F88095100E19D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93FC3901F88095100E19D10 /* LaunchScreen.storyboard */; };
 		C93FC39D1F88095100E19D10 /* car_maintenanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC39C1F88095100E19D10 /* car_maintenanceTests.swift */; };
 		C93FC3A81F88095100E19D10 /* car_maintenanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3A71F88095100E19D10 /* car_maintenanceUITests.swift */; };
+		C9E5EF1B1F9A7B540032A32C /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF1A1F9A7B540032A32C /* settings.png */; };
+		C9E5EF1D1F9A7D1F0032A32C /* automobiles_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF1C1F9A7D1F0032A32C /* automobiles_icon.png */; };
 		F9AC2B0B1F9A4A3C00F4AE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */; };
-		F9AC2B0D1F9A4A5F00F4AE46 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B0C1F9A4A5F00F4AE46 /* settings.png */; };
-		F9AC2B0F1F9A4D2000F4AE46 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B0E1F9A4D1F00F4AE46 /* Info.png */; };
 		F9AC2B111F9A52CD00F4AE46 /* yellow-toy-car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */; };
-		F9AC2B131F9A542C00F4AE46 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AC2B121F9A542B00F4AE46 /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +49,10 @@
 		C93FC3A31F88095100E19D10 /* car_maintenanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = car_maintenanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FC3A71F88095100E19D10 /* car_maintenanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_maintenanceUITests.swift; sourceTree = "<group>"; };
 		C93FC3A91F88095100E19D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E5EF1A1F9A7B540032A32C /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Assets.xcassets/AppIcon.appiconset/settings.png; sourceTree = "<group>"; };
+		C9E5EF1C1F9A7D1F0032A32C /* automobiles_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = automobiles_icon.png; path = Assets.xcassets/AppIcon.appiconset/automobiles_icon.png; sourceTree = "<group>"; };
 		F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F9AC2B0C1F9A4A5F00F4AE46 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Assets.xcassets/AppIcon.appiconset/settings.png; sourceTree = "<group>"; };
-		F9AC2B0E1F9A4D1F00F4AE46 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = Assets.xcassets/AppIcon.appiconset/Info.png; sourceTree = "<group>"; };
 		F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "yellow-toy-car.jpg"; path = "Assets.xcassets/images/yellow-toy-car.jpg"; sourceTree = "<group>"; };
-		F9AC2B121F9A542B00F4AE46 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = Assets.xcassets/AppIcon.appiconset/back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +107,9 @@
 				C93FC3871F88095100E19D10 /* AppDelegate.swift */,
 				C93FC3891F88095100E19D10 /* ViewController.swift */,
 				C93FC38B1F88095100E19D10 /* Main.storyboard */,
+				C9E5EF1A1F9A7B540032A32C /* settings.png */,
 				F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */,
-				F9AC2B121F9A542B00F4AE46 /* back.png */,
-				F9AC2B0E1F9A4D1F00F4AE46 /* Info.png */,
-				F9AC2B0C1F9A4A5F00F4AE46 /* settings.png */,
+				C9E5EF1C1F9A7D1F0032A32C /* automobiles_icon.png */,
 				C93FC3901F88095100E19D10 /* LaunchScreen.storyboard */,
 				C93FC3931F88095100E19D10 /* Info.plist */,
 			);
@@ -244,13 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9AC2B0D1F9A4A5F00F4AE46 /* settings.png in Resources */,
 				C93FC3921F88095100E19D10 /* LaunchScreen.storyboard in Resources */,
-				F9AC2B0F1F9A4D2000F4AE46 /* Info.png in Resources */,
+				C9E5EF1B1F9A7B540032A32C /* settings.png in Resources */,
 				F9AC2B0B1F9A4A3C00F4AE46 /* Assets.xcassets in Resources */,
-				F9AC2B131F9A542C00F4AE46 /* back.png in Resources */,
 				C93FC38D1F88095100E19D10 /* Main.storyboard in Resources */,
 				F9AC2B111F9A52CD00F4AE46 /* yellow-toy-car.jpg in Resources */,
+				C9E5EF1D1F9A7D1F0032A32C /* automobiles_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

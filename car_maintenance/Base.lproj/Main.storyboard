@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GO"/>
                                 <connections>
-                                    <segue destination="odH-dm-04y" kind="show" id="DCy-WP-OT6"/>
+                                    <segue destination="CtF-bV-FOf" kind="presentation" id="Gvk-Xo-C6o"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,111 +41,88 @@
             </objects>
             <point key="canvasLocation" x="378" y="134"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ehS-4K-dkb">
+        <!--Info-->
+        <scene sceneID="27c-wI-bW3">
             <objects>
-                <viewController id="odH-dm-04y" sceneMemberID="viewController">
+                <viewController id="ocl-Z6-1eG" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Qd6-4j-fle"/>
-                        <viewControllerLayoutGuide type="bottom" id="Cyz-zI-D4J"/>
+                        <viewControllerLayoutGuide type="top" id="KEI-zQ-2gh"/>
+                        <viewControllerLayoutGuide type="bottom" id="XIr-iA-QFY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Fgr-0D-2du">
+                    <view key="view" contentMode="scaleToFill" id="1Nv-fE-Qnh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydM-w4-Khe">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="CAR 1" id="MPS-Oo-DRk"/>
-                                </items>
-                            </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0nT-Ck-G0Y">
-                                <rect key="frame" x="0.0" y="615" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Info" image="Info.png" width="35" id="Bf2-UB-grg">
-                                        <inset key="imageInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
-                                        <connections>
-                                            <segue destination="JxH-KD-FxU" kind="show" id="R7u-2E-Sl9"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Settings" image="settings.png" width="35" id="Q20-Jq-yb9">
-                                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
-                                        <connections>
-                                            <segue destination="SOb-aI-TWL" kind="show" id="OVy-A0-80f"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Info" id="mde-bz-ZSw" userLabel="Information"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9yP-CG-nDF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MSl-El-acc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369" y="134"/>
+            <point key="canvasLocation" x="2258" y="466"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Rpg-Ow-kHf">
+        <scene sceneID="gZO-UZ-Y4B">
             <objects>
-                <viewController id="JxH-KD-FxU" sceneMemberID="viewController">
+                <viewController id="QQW-Vn-u7C" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Zi-Ev-A6b"/>
-                        <viewControllerLayoutGuide type="bottom" id="tyS-QO-c0A"/>
+                        <viewControllerLayoutGuide type="top" id="FdN-gB-JZY"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGi-2y-eya"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Pfb-A8-2vR">
+                    <view key="view" contentMode="scaleToFill" id="j8I-9y-SKd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" backIndicatorImage="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wtb-gR-uDh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Information" id="B6P-5W-0KU"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" image="settings.png" selectedImage="settings.png" id="wA4-bW-ht8" userLabel="Settings">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QV8-L7-K8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAh-i6-NxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2108" y="-264"/>
+            <point key="canvasLocation" x="2258" y="-200"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="sNO-Y7-FOy">
+        <!--Tab Bar Controller-->
+        <scene sceneID="tyg-fR-Zwg">
             <objects>
-                <viewController id="SOb-aI-TWL" sceneMemberID="viewController">
+                <tabBarController id="CtF-bV-FOf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HlP-nv-RWW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hlm-BO-YoF" kind="relationship" relationship="viewControllers" id="CiU-9n-GKK"/>
+                        <segue destination="ocl-Z6-1eG" kind="relationship" relationship="viewControllers" id="BIz-66-211"/>
+                        <segue destination="QQW-Vn-u7C" kind="relationship" relationship="viewControllers" id="tOr-Aa-bUe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXG-cQ-DEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="133"/>
+        </scene>
+        <!--Car-->
+        <scene sceneID="Qep-Mw-INC">
+            <objects>
+                <viewController id="Hlm-BO-YoF" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="25m-qd-Uqu"/>
-                        <viewControllerLayoutGuide type="bottom" id="EKQ-OJ-TuF"/>
+                        <viewControllerLayoutGuide type="top" id="sES-go-hAv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ioQ-JZ-Phf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1rr-Ma-O9E">
+                    <view key="view" contentMode="scaleToFill" id="91W-kQ-Py0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" backIndicatorImage="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="SXj-NY-alp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Settings" id="A5T-as-3CS"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Car" image="automobiles_icon.png" selectedImage="automobiles_icon.png" id="opB-z1-kHk" userLabel="Car"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V2G-HC-AjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MfE-Z5-e6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2108" y="414"/>
+            <point key="canvasLocation" x="1302" y="875"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Info.png" width="512" height="512"/>
-        <image name="back.png" width="400" height="400"/>
-        <image name="settings.png" width="512" height="512"/>
+        <image name="automobiles_icon.png" width="20" height="20"/>
+        <image name="settings.png" width="20" height="20"/>
         <image name="yellow-toy-car.jpg" width="600" height="450"/>
     </resources>
 </document>
