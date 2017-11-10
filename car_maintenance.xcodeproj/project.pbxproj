@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C908D7681FB62DAC005DBB74 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D7671FB62DAC005DBB74 /* CarViewController.swift */; };
+		C908D76A1FB63183005DBB74 /* UserAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C908D7691FB63183005DBB74 /* UserAlertViewController.swift */; };
 		C93FC3881F88095100E19D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3871F88095100E19D10 /* AppDelegate.swift */; };
 		C93FC38A1F88095100E19D10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3891F88095100E19D10 /* ViewController.swift */; };
 		C93FC38D1F88095100E19D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93FC38B1F88095100E19D10 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C908D7671FB62DAC005DBB74 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		C908D7691FB63183005DBB74 /* UserAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlertViewController.swift; sourceTree = "<group>"; };
 		C93FC3841F88095100E19D10 /* car_maintenance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = car_maintenance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FC3871F88095100E19D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C93FC3891F88095100E19D10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				F9AC2B101F9A52CD00F4AE46 /* yellow-toy-car.jpg */,
 				C93FC3871F88095100E19D10 /* AppDelegate.swift */,
 				C93FC3891F88095100E19D10 /* ViewController.swift */,
+				C908D7671FB62DAC005DBB74 /* CarViewController.swift */,
+				C908D7691FB63183005DBB74 /* UserAlertViewController.swift */,
 				C93FC38B1F88095100E19D10 /* Main.storyboard */,
 				C9E5EF1A1F9A7B540032A32C /* settings.png */,
 				F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */,
@@ -205,6 +211,7 @@
 				TargetAttributes = {
 					C93FC3831F88095100E19D10 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = N6RP3H788Z;
 						ProvisioningStyle = Automatic;
 					};
 					C93FC3971F88095100E19D10 = {
@@ -276,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93FC38A1F88095100E19D10 /* ViewController.swift in Sources */,
+				C908D7681FB62DAC005DBB74 /* CarViewController.swift in Sources */,
+				C908D76A1FB63183005DBB74 /* UserAlertViewController.swift in Sources */,
 				C93FC3881F88095100E19D10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = car_maintenance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.bcit.car-maintenance";
@@ -454,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = car_maintenance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.bcit.car-maintenance";
