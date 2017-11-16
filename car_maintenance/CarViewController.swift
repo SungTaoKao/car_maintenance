@@ -33,26 +33,10 @@ class CarViewController: UIViewController {
     
     
     
-    func addNewAlert(){
-        
-        
-        let content = UNMutableNotificationContent()
-        content.title = "I am an alert"
-        content.body = "Your wheels need fixing"
-        content.categoryIdentifier = "alarm"
-        content.userInfo = ["customData": "fizzbuzz"]
-        content.sound = UNNotificationSound.default()
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
-        
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        center.add(request)
-        
-        
-        print("Alert Success")
-    }
     
-    func backAction(){
+    
+    
+    @objc func backAction(){
         self.dismiss(animated: true, completion: nil);
         print("backAction")
     }
