@@ -27,8 +27,8 @@ class UserAlertViewController: UIViewController {
     @objc func addNewAlert(title: String, message: String)  {
         
         let content = UNMutableNotificationContent()
-        content.title = "I am an alert"
-        content.body = "Your wheels need fixing"
+        content.title = title
+        content.body = message
         content.categoryIdentifier = "alarm"
         content.userInfo = ["customData": "fizzbuzz"]
         content.sound = UNNotificationSound.default()
