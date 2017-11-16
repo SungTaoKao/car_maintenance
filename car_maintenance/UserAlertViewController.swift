@@ -40,11 +40,27 @@ class UserAlertViewController: UIViewController {
         
     }
     
+    @objc func deleteAlert(id: String, key: String) -> Bool {
+        let userDefaults = UserDefaults.standard
+        if(userDefaults.object(forKey: key) != nil){
+            let alertList : NSMutableArray = userDefaults.object(forKey: key) as! NSMutableArray
+            if(alertList.contains(id)){
+                //to do: delete alert
+                alertList.remove(id)
+                return true
+            } else {
+                return false
+            }
+        } else {
+            return false
+        }
+    }
+    
     @objc func updateAlertList(id: String, key: String) -> Bool {
         let userDefaults = UserDefaults.standard
         
         if(userDefaults.object(forKey: key) != nil){
-            let alertList : NSArray = userDefaults.object(forKey: key) as! NSMutableArray
+            let alertList : NSMutableArray = userDefaults.object(forKey: key) as! NSMutableArray
             alertList.adding(id)
             userDefaults.set(alertList, forKey: key)
             if(userDefaults.synchronize()){
