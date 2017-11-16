@@ -24,6 +24,44 @@ class UserAlertViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func addNewAlert(title: String, message: String)  {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "I am an alert"
+        content.body = "Your wheels need fixing"
+        content.categoryIdentifier = "alarm"
+        content.userInfo = ["customData": "fizzbuzz"]
+        content.sound = UNNotificationSound.default()
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(request)
+        
+    }
+    
+    @objc func updateAlertList(id: String, key: String) -> Bool {
+        let userDefaults = UserDefaults.standard
+        
+        if(userDefaults.object(forKey: key) != nil){
+            let alertList : NSArray = userDefaults.object(forKey: key) as! NSMutableArray
+            alertList.adding(id)
+            userDefaults.set(alertList, forKey: key)
+            if(userDefaults.synchronize()){
+                return true
+            } else {
+                return false
+            }
+        } else {
+            let alertList = [id] as NSArray
+            userDefaults.set(alertList, forKey: key)
+            if(userDefaults.synchronize()){
+                return true
+            } else {
+                return false
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
