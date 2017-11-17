@@ -19,7 +19,7 @@ class CarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        carNavItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .plain, target: self, action: #selector(addNewAlert))
+        carNavItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .plain, target: self, action: #selector(addAlert))
         carNavItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backAction))
         
 
@@ -31,10 +31,12 @@ class CarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    
-    
+    @objc func addAlert(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AlertViewNav") as! UserAlertNavController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     
     @objc func backAction(){
         self.dismiss(animated: true, completion: nil);

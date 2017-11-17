@@ -90,15 +90,6 @@
                     <view key="view" contentMode="scaleToFill" id="91W-kQ-Py0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGK-a0-fi8">
-                                <rect key="frame" x="67" y="194" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="KFN-s6-TgT" kind="embed" id="tzz-VY-dxC"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="uor-ho-kA0"/>
@@ -108,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfE-Z5-e6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3225" y="919"/>
+            <point key="canvasLocation" x="3224.8000000000002" y="918.89055472263874"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tyg-fR-Zwg">
@@ -132,20 +123,21 @@
         <!--User Alert View Controller-->
         <scene sceneID="eZ5-RF-QPa">
             <objects>
-                <viewController id="KFN-s6-TgT" customClass="UserAlertViewController" customModule="car_maintenance" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEV-G5-m5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="AlertView" id="KFN-s6-TgT" customClass="UserAlertViewController" customModule="car_maintenance" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7pf-1F-XXi"/>
                         <viewControllerLayoutGuide type="bottom" id="kiE-yQ-epN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bfx-wm-YUA">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EhB-uL-Wda"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MEV-G5-m5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4168" y="918"/>
+            <point key="canvasLocation" x="4206" y="919"/>
         </scene>
         <!--Settings-->
         <scene sceneID="gdn-be-gO1">
