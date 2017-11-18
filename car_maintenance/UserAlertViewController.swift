@@ -8,13 +8,15 @@
 
 import UIKit
 import UserNotifications
+import Eureka
 
-class UserAlertViewController: UIViewController {
+class UserAlertViewController: FormViewController {
     
     let center = UNUserNotificationCenter.current()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadForm()
 
         // Do any additional setup after loading the view.
     }
@@ -22,6 +24,44 @@ class UserAlertViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc func loadForm(){
+        form +++ Section("Reminder")
+            <<< ActionSheetRow<String>() {
+                $0.title = "Type"
+                $0.selectorTitle = "Choose a type"
+                $0.options = ["Tune-up","Wheel Rotation","Oil change"]
+                $0.value = "Not Selected"    // Default Value
+                $0.tag = "alertType"
+            }
+            <<< PhoneRow(){
+                $0.title = "Phone Row"
+                $0.placeholder = "And numbers here"
+            }
+            +++ Section("Details")
+            <<< DateTimeRow(){
+                $0.title = "Set Date"
+                $0.value = Date(timeIntervalSinceReferenceDate: 0)
+            }
+        
+            +++ Section("Confirmation")
+            <<< ButtonRow(){
+                $0.title = "Add Alert"
+                $0.onCellSelection(self.alertButtonPressed)
+            }
+            <<< ButtonRow(){
+                $0.title = "Cancel"
+                $0.onCellSelection(self.cancelButtonPressed)
+            }
+        }
+    
+    func alertButtonPressed(cell: ButtonCellOf<String>, row: ButtonRow) {
+        
+    }
+    
+    func cancelButtonPressed(cell: ButtonCellOf<String>, row: ButtonRow) {
+        self.dismiss(animated: true, completion: nil);
     }
     
     @objc func addNewAlert(title: String, message: String)  {

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LandingViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="car_maintenance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="LandingViewController" customClass="LandingViewController" customModule="car_maintenance" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,23 +23,30 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="oSJ-Cc-ITF">
                                 <rect key="frame" x="67" y="131" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="presstar3" translatesAutoresizingMaskIntoConstraints="NO" id="MxB-uv-qAl">
+                                <rect key="frame" x="41" y="267" width="292" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neoncar.gif" translatesAutoresizingMaskIntoConstraints="NO" id="agd-9u-PAM">
+                                <rect key="frame" x="35" y="396" width="305" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aon-2X-LVk">
-                                <rect key="frame" x="164" y="338" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="GO"/>
-                                <connections>
-                                    <segue destination="CtF-bV-FOf" kind="show" id="UcP-7g-2xt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="neonCar" destination="agd-9u-PAM" id="eN5-qI-j9q"/>
+                        <outlet property="presGif" destination="MxB-uv-qAl" id="JBb-Qc-JEH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="123"/>
+            <point key="canvasLocation" x="237.59999999999999" y="122.78860569715144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="27c-wI-bW3">
@@ -104,7 +111,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="tyg-fR-Zwg">
             <objects>
-                <tabBarController id="CtF-bV-FOf" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabRoot" id="CtF-bV-FOf" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HlP-nv-RWW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -203,6 +210,8 @@
         <image name="car.gif" width="20" height="20"/>
         <image name="info.png" width="20" height="20"/>
         <image name="logo" width="408" height="258"/>
+        <image name="neoncar.gif" width="350" height="233"/>
+        <image name="presstar3" width="276" height="274"/>
         <image name="settings.png" width="20" height="20"/>
     </resources>
 </document>
