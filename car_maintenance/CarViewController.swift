@@ -33,8 +33,7 @@ class CarViewController: UIViewController {
     
     @objc func addAlert(){
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AlertViewNav") as! UserAlertNavController
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AlertView") as! UserAlertViewController
         self.present(nextViewController, animated:true, completion:nil)
     }
     
