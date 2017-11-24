@@ -13,6 +13,21 @@ import Eureka
 class UserAlertViewController: FormViewController {
     
     let center = UNUserNotificationCenter.current()
+    struct alertObject{
+        var type = String()
+        var mechName = String()
+        var mechNumber = String()
+        var mechAddress = String()
+        var checkupDate = Date()
+        var message = String()
+    }
+    
+    var type = ""
+    var mechName = ""
+    var mechNumber = ""
+    var mechAddress = ""
+    var checkupDate = Date.init()
+    var message = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,18 +46,36 @@ class UserAlertViewController: FormViewController {
             <<< ActionSheetRow<String>() {
                 $0.title = "Type"
                 $0.selectorTitle = "Choose a type"
-                $0.options = ["Tune-up","Wheel Rotation","Oil change"]
+                $0.options = ["Tune-up","Wheel Rotation","Oil change", "Brakes", "Batteries", "General"]
                 $0.value = "Not Selected"    // Default Value
-                $0.tag = "alertType"
+                $0.onChange(self.updateType)
+            }
+            +++ Section("Mechanic")
+            <<< TextRow() {
+                $0.title = "Name"
+                $0.placeholder = "No Input"
+                $0.onChange(self.updateMechName)
             }
             <<< PhoneRow(){
-                $0.title = "Phone Row"
-                $0.placeholder = "And numbers here"
+                $0.title = "Phone number"
+                $0.placeholder = "Add Phone Number"
+                $0.onChange(self.updateNumber)
+            }
+            <<< TextRow() {
+                $0.title = "Address"
+                $0.placeholder = "Add Address"
+                $0.onChange(self.updateAddress)
             }
             +++ Section("Details")
             <<< DateTimeRow(){
                 $0.title = "Set Date"
-                $0.value = Date(timeIntervalSinceReferenceDate: 0)
+                $0.value = Date.init()
+                $0.onChange(self.updateDate)
+            }
+            <<< TextRow(){
+                $0.title = "Message"
+                $0.placeholder = "Default"
+                $0.onChange(self.updateMessage)
             }
         
             +++ Section("Confirmation")
@@ -55,16 +88,98 @@ class UserAlertViewController: FormViewController {
                 $0.onCellSelection(self.cancelButtonPressed)
             }
         }
+    func updateType(cell: ActionSheetRow<String>){
+        self.type = cell.value!
+    }
+    func updateMechName(cell: TextRow){
+        if(cell.value == nil){
+            self.mechName = ""
+        } else {
+            self.mechName = cell.value!
+        }
+    }
+    func updateNumber(cell: PhoneRow){
+        if(cell.value == nil) {
+            self.mechNumber = ""
+        } else {
+            self.mechNumber = cell.value!
+        }
+    }
+    func updateAddress(cell: TextRow){
+        if(cell.value == nil) {
+            self.mechAddress = ""
+        } else {
+            self.mechAddress = cell.value!
+        }
+    }
+    func updateDate(cell: DateTimeRow){
+        
+        self.checkupDate = cell.value!
+    }
+    func updateMessage(cell: TextRow){
+        if(cell.value == nil){
+            self.message = ""
+        } else {
+            self.message = cell.value!
+        }
+    }
+    
+    func displayWarning(message: String){
+        let message = message
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        self.present(alert, animated: true)
+        
+        // duration in seconds
+        let duration: Double = 3
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
+            alert.dismiss(animated: true)
+        }
+    }
     
     func alertButtonPressed(cell: ButtonCellOf<String>, row: ButtonRow) {
-        
+        if(self.checkupDate.timeIntervalSinceNow < 0) {
+            displayWarning(message: "Invalid Date. No time traveling to the past allowed")
+            return
+        } else if(self.message == "" && self.title == ""){
+            addNewAlert(title: "Reminder", message: "Time for a checkup!", date: self.checkupDate)
+        } else if (self.message == "") {
+            addNewAlert(title: self.type + " Reminder", message: "Time for a checkup!", date: self.checkupDate)
+        } else if (self.title == "") {
+            addNewAlert(title: "Reminder", message: self.message, date: self.checkupDate)
+        } else {
+            addNewAlert(title: self.type + " Reminder", message: self.message, date: self.checkupDate)
+        }
+        let alertID = self.type + ":" + String(self.checkupDate.timeIntervalSinceNow)
+        self.updateAlertList(id: alertID , key: "alertArray")
+        self.saveAlertDetails(id: alertID, key: "detailsDictionary")
+        self.dismiss(animated: true, completion: nil);
     }
     
     func cancelButtonPressed(cell: ButtonCellOf<String>, row: ButtonRow) {
         self.dismiss(animated: true, completion: nil);
     }
     
-    @objc func addNewAlert(title: String, message: String)  {
+    @objc func saveAlertDetails(id: String, key: String) {
+        let userDefaults = UserDefaults.standard
+        let tempAlert = alertObject(type: self.type, mechName: self.mechName, mechNumber: self.mechNumber, mechAddress: self.mechAddress, checkupDate: self.checkupDate, message: self.message)
+      
+        if(userDefaults.object(forKey: key) != nil){
+            let alertDictionary : NSMutableDictionary = userDefaults.object(forKey: key) as! NSMutableDictionary
+            alertDictionary.setValue(tempAlert, forKey: id)
+            userDefaults.set(alertDictionary, forKey: key)
+            print("notnil")
+        } else {
+            print("nil")
+            let alertDictionary = [id : tempAlert]
+            userDefaults.set(alertDictionary, forKey: key)
+        }
+        
+        
+        
+    }
+    
+    @objc func addNewAlert(title: String, message: String, date: Date)  {
         
         let content = UNMutableNotificationContent()
         content.title = title
@@ -73,7 +188,9 @@ class UserAlertViewController: FormViewController {
         content.userInfo = ["customData": "fizzbuzz"]
         content.sound = UNNotificationSound.default()
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        print(date.timeIntervalSinceNow)
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: date.timeIntervalSinceNow, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         center.add(request)
@@ -96,26 +213,18 @@ class UserAlertViewController: FormViewController {
         }
     }
     
-    @objc func updateAlertList(id: String, key: String) -> Bool {
+    @objc func updateAlertList(id: String, key: String){
         let userDefaults = UserDefaults.standard
         
         if(userDefaults.object(forKey: key) != nil){
             let alertList : NSMutableArray = userDefaults.object(forKey: key) as! NSMutableArray
             alertList.adding(id)
             userDefaults.set(alertList, forKey: key)
-            if(userDefaults.synchronize()){
-                return true
-            } else {
-                return false
-            }
+            print("notnil")
         } else {
+            print("nil")
             let alertList = [id] as NSArray
             userDefaults.set(alertList, forKey: key)
-            if(userDefaults.synchronize()){
-                return true
-            } else {
-                return false
-            }
         }
     }
 
