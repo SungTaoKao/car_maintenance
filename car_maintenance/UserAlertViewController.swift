@@ -152,7 +152,7 @@ class UserAlertViewController: FormViewController {
         }
         let alertID = self.type + ":" + String(self.checkupDate.timeIntervalSinceNow)
         self.updateAlertList(id: alertID , key: "alertArray")
-        self.saveAlertDetails(id: alertID, key: "detailsDictionary")
+        //self.saveAlertDetails(id: alertID, key: "detailsDictionary")
         self.dismiss(animated: true, completion: nil);
     }
     
