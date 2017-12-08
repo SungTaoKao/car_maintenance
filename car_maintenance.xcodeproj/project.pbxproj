@@ -21,6 +21,7 @@
 		C965A7E21FBFADBD00B07A78 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A7E11FBFADBD00B07A78 /* File.swift */; };
 		C965A7E41FBFAE8800B07A78 /* presstar3.gif in Resources */ = {isa = PBXBuildFile; fileRef = C965A7E31FBFAE8800B07A78 /* presstar3.gif */; };
 		C965A7E61FBFB3B400B07A78 /* neoncar.gif in Resources */ = {isa = PBXBuildFile; fileRef = C965A7E51FBFB3B400B07A78 /* neoncar.gif */; };
+		C9DF22B61FDA906600F7B225 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF22B51FDA906600F7B225 /* InfoViewController.swift */; };
 		C9E5EF1B1F9A7B540032A32C /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF1A1F9A7B540032A32C /* settings.png */; };
 		C9E5EF231F9A812D0032A32C /* car.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF221F9A812D0032A32C /* car.gif */; };
 		C9E5EF271F9A823B0032A32C /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF261F9A823B0032A32C /* info.png */; };
@@ -72,6 +73,7 @@
 		C965A7E11FBFADBD00B07A78 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		C965A7E31FBFAE8800B07A78 /* presstar3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = presstar3.gif; path = ../../Downloads/presstar3.gif; sourceTree = "<group>"; };
 		C965A7E51FBFB3B400B07A78 /* neoncar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = neoncar.gif; path = ../../Downloads/neoncar.gif; sourceTree = "<group>"; };
+		C9DF22B51FDA906600F7B225 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C9E5EF1A1F9A7B540032A32C /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Assets.xcassets/AppIcon.appiconset/settings.png; sourceTree = "<group>"; };
 		C9E5EF221F9A812D0032A32C /* car.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = car.gif; path = Assets.xcassets/AppIcon.appiconset/car.gif; sourceTree = "<group>"; };
 		C9E5EF261F9A823B0032A32C /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = Assets.xcassets/AppIcon.appiconset/info.png; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				C908D7671FB62DAC005DBB74 /* CarViewController.swift */,
 				C908D7691FB63183005DBB74 /* UserAlertViewController.swift */,
 				C93FC38B1F88095100E19D10 /* Main.storyboard */,
+				C9DF22B51FDA906600F7B225 /* InfoViewController.swift */,
 				C9E5EF1A1F9A7B540032A32C /* settings.png */,
 				F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */,
 				C9E5EF261F9A823B0032A32C /* info.png */,
@@ -501,6 +504,7 @@
 				C93FC38A1F88095100E19D10 /* ViewController.swift in Sources */,
 				C965A7E21FBFADBD00B07A78 /* File.swift in Sources */,
 				C908D7681FB62DAC005DBB74 /* CarViewController.swift in Sources */,
+				C9DF22B61FDA906600F7B225 /* InfoViewController.swift in Sources */,
 				C908D76A1FB63183005DBB74 /* UserAlertViewController.swift in Sources */,
 				C965A7DC1FBFA37A00B07A78 /* LandingViewController.swift in Sources */,
 				C93FC3881F88095100E19D10 /* AppDelegate.swift in Sources */,
