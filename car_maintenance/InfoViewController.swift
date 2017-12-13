@@ -35,6 +35,7 @@ class InfoViewController: FormViewController {
     var carinfo = carInfo()
     @IBOutlet var infoNavItem: UINavigationItem!
     
+    
     let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
@@ -78,11 +79,13 @@ class InfoViewController: FormViewController {
         self.defaults.set(carinfo.gasType, forKey: "gasType")
         self.defaults.set(carinfo.wheels, forKey: "wheels")
         self.defaults.set(carinfo.brakes, forKey: "brakes")
+        
+        tabBarController?.selectedIndex = 0
+        
     }
     
     func cancelButtonPressed(cell: ButtonCellOf<String>, row: ButtonRow) {
-
-        self.dismiss(animated: true, completion: nil);
+        tabBarController?.selectedIndex = 0
     }
     
     func validateDefaults(){
