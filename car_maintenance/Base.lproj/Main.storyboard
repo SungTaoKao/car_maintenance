@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="237.59999999999999" y="122.78860569715144"/>
         </scene>
-        <!--Info View Controller-->
+        <!--Car Details-->
         <scene sceneID="27c-wI-bW3">
             <objects>
                 <viewController id="ocl-Z6-1eG" customClass="InfoViewController" customModule="car_maintenance" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,7 +61,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0k6-qa-EMF"/>
+                    <navigationItem key="navigationItem" title="Car Details" id="0k6-qa-EMF"/>
+                    <connections>
+                        <outlet property="infoNavItem" destination="0k6-qa-EMF" id="nto-S7-xTI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSl-El-acc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
