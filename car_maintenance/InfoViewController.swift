@@ -43,6 +43,7 @@ class InfoViewController: FormViewController {
         self.validateDefaults()
         loadForm()
         
+        infoNavItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .plain, target: self, action: #selector(addAlert))
         infoNavItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backAction))
         
         
@@ -55,6 +56,12 @@ class InfoViewController: FormViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @objc func addAlert(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "AlertView") as! UserAlertViewController
+        self.present(nextViewController, animated:true, completion:nil)
     }
     
     @objc func backAction(){

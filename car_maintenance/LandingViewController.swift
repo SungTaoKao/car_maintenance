@@ -17,7 +17,7 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presGif.loadGif(name: "presstar3")
-        neonCar.loadGif(name: "neoncar")
+        neonCar.loadGif(name: "carspin")
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(gesture:)))
         

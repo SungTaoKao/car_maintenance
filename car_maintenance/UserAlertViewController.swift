@@ -138,20 +138,22 @@ class UserAlertViewController: FormViewController {
     }
     
     func alertButtonPressed(cell: ButtonCellOf<String>, row: ButtonRow) {
+        
+        let mechinfo = "\(mechName) \(mechNumber) \(mechAddress)"
         if(self.checkupDate.timeIntervalSinceNow < 0) {
             displayWarning(message: "Invalid Date. No time traveling to the past allowed")
             return
         } else if(self.message == "" && self.title == ""){
-            addNewAlert(title: "Reminder", message: "Time for a checkup!", date: self.checkupDate)
+            addNewAlert(title: "Reminder", message: "Time for a checkup!", date: self.checkupDate, mechinfo: mechinfo)
         } else if (self.message == "") {
-            addNewAlert(title: self.type + " Reminder", message: "Time for a checkup!", date: self.checkupDate)
+            addNewAlert(title: self.type + " Reminder", message: "Time for a checkup!", date: self.checkupDate, mechinfo: mechinfo)
         } else if (self.title == "") {
-            addNewAlert(title: "Reminder", message: self.message, date: self.checkupDate)
+            addNewAlert(title: "Reminder", message: self.message, date: self.checkupDate, mechinfo: mechinfo)
         } else {
-            addNewAlert(title: self.type + " Reminder", message: self.message, date: self.checkupDate)
+            addNewAlert(title: self.type + " Reminder", message: self.message, date: self.checkupDate, mechinfo: mechinfo)
         }
-        let alertID = self.type + ":" + String(self.checkupDate.timeIntervalSinceNow)
-        self.updateAlertList(id: alertID , key: "alertArray")
+        //let alertID = self.type + ":" + String(self.checkupDate.timeIntervalSinceNow)
+        //self.updateAlertList(id: alertID , key: "alertArray")
         //self.saveAlertDetails(id: alertID, key: "detailsDictionary")
         self.dismiss(animated: true, completion: nil);
     }
@@ -179,10 +181,11 @@ class UserAlertViewController: FormViewController {
         
     }
     
-    @objc func addNewAlert(title: String, message: String, date: Date)  {
+    @objc func addNewAlert(title: String, message: String, date: Date, mechinfo: String)  {
         
         let content = UNMutableNotificationContent()
         content.title = title
+        content.subtitle = mechinfo
         content.body = message
         content.categoryIdentifier = "alarm"
         content.userInfo = ["customData": "fizzbuzz"]

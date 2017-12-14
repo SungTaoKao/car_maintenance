@@ -19,8 +19,8 @@
 		C93FC3A81F88095100E19D10 /* car_maintenanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FC3A71F88095100E19D10 /* car_maintenanceUITests.swift */; };
 		C965A7DC1FBFA37A00B07A78 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A7DB1FBFA37A00B07A78 /* LandingViewController.swift */; };
 		C965A7E21FBFADBD00B07A78 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C965A7E11FBFADBD00B07A78 /* File.swift */; };
-		C965A7E41FBFAE8800B07A78 /* presstar3.gif in Resources */ = {isa = PBXBuildFile; fileRef = C965A7E31FBFAE8800B07A78 /* presstar3.gif */; };
-		C965A7E61FBFB3B400B07A78 /* neoncar.gif in Resources */ = {isa = PBXBuildFile; fileRef = C965A7E51FBFB3B400B07A78 /* neoncar.gif */; };
+		C9B09BEA1FE311DD00F0040F /* carspin.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9B09BE91FE310DE00F0040F /* carspin.gif */; };
+		C9B09BEB1FE311E100F0040F /* presstar3.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9B09BE81FE3103D00F0040F /* presstar3.gif */; };
 		C9DF22B61FDA906600F7B225 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF22B51FDA906600F7B225 /* InfoViewController.swift */; };
 		C9E5EF1B1F9A7B540032A32C /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF1A1F9A7B540032A32C /* settings.png */; };
 		C9E5EF231F9A812D0032A32C /* car.gif in Resources */ = {isa = PBXBuildFile; fileRef = C9E5EF221F9A812D0032A32C /* car.gif */; };
@@ -71,8 +71,8 @@
 		C93FC3A91F88095100E19D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C965A7DB1FBFA37A00B07A78 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		C965A7E11FBFADBD00B07A78 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		C965A7E31FBFAE8800B07A78 /* presstar3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = presstar3.gif; path = ../../Downloads/presstar3.gif; sourceTree = "<group>"; };
-		C965A7E51FBFB3B400B07A78 /* neoncar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = neoncar.gif; path = ../../Downloads/neoncar.gif; sourceTree = "<group>"; };
+		C9B09BE81FE3103D00F0040F /* presstar3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = presstar3.gif; sourceTree = "<group>"; };
+		C9B09BE91FE310DE00F0040F /* carspin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carspin.gif; sourceTree = "<group>"; };
 		C9DF22B51FDA906600F7B225 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C9E5EF1A1F9A7B540032A32C /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Assets.xcassets/AppIcon.appiconset/settings.png; sourceTree = "<group>"; };
 		C9E5EF221F9A812D0032A32C /* car.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = car.gif; path = Assets.xcassets/AppIcon.appiconset/car.gif; sourceTree = "<group>"; };
@@ -156,12 +156,12 @@
 				C9E5EF1A1F9A7B540032A32C /* settings.png */,
 				F9AC2B0A1F9A4A3C00F4AE46 /* Assets.xcassets */,
 				C9E5EF261F9A823B0032A32C /* info.png */,
+				C9B09BE91FE310DE00F0040F /* carspin.gif */,
 				C9E5EF221F9A812D0032A32C /* car.gif */,
 				C965A7E11FBFADBD00B07A78 /* File.swift */,
-				C965A7E31FBFAE8800B07A78 /* presstar3.gif */,
 				C93FC3901F88095100E19D10 /* LaunchScreen.storyboard */,
 				C93FC3931F88095100E19D10 /* Info.plist */,
-				C965A7E51FBFB3B400B07A78 /* neoncar.gif */,
+				C9B09BE81FE3103D00F0040F /* presstar3.gif */,
 				C965A7DB1FBFA37A00B07A78 /* LandingViewController.swift */,
 			);
 			path = car_maintenance;
@@ -318,15 +318,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C965A7E41FBFAE8800B07A78 /* presstar3.gif in Resources */,
 				C93FC3921F88095100E19D10 /* LaunchScreen.storyboard in Resources */,
 				C9E5EF271F9A823B0032A32C /* info.png in Resources */,
 				C9E5EF1B1F9A7B540032A32C /* settings.png in Resources */,
 				F9AC2B0B1F9A4A3C00F4AE46 /* Assets.xcassets in Resources */,
-				C965A7E61FBFB3B400B07A78 /* neoncar.gif in Resources */,
+				C9B09BEB1FE311E100F0040F /* presstar3.gif in Resources */,
 				C9E5EF231F9A812D0032A32C /* car.gif in Resources */,
 				C93FC38D1F88095100E19D10 /* Main.storyboard in Resources */,
 				F9AC2B111F9A52CD00F4AE46 /* yellow-toy-car.jpg in Resources */,
+				C9B09BEA1FE311DD00F0040F /* carspin.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
